@@ -10,7 +10,8 @@ a set of conditions for each number 6 different types
 
 
 const welcomeMessage = () => {
-    randNum = Math.floor(Math.random() * 7)
+    let ranarr = [0,1,2,3,4,5,6]
+    randNum = Math.floor(Math.random() * ranarr.length);
     switch (randNum) {
         case 0: 
         console.log(`Sup bro!`);
@@ -34,7 +35,7 @@ const welcomeMessage = () => {
             console.log(`Fuck you bro, why are you even here rn??`);
         break;
         default:
-            console.log(`You done broke the mesage.`)
+            console.log(`You done broke the message.`)
     };
     
 }
@@ -42,4 +43,6 @@ const welcomeMessage = () => {
 
 
 welcomeMessage();
+
+
 
